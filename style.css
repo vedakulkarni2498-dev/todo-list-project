@@ -1,57 +1,66 @@
+/* Global body styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
-  text-align: center;
-  margin-top: 50px;
+  font-family: Arial, sans-serif; /* Set font for the page */
+  background-color: #f4f6f8;      /* Light gray background */
+  text-align: center;             /* Center-align all text */
+  margin-top: 50px;               /* Add space from top */
 }
 
+/* Main heading style */
 h1 {
-  color: #333;
+  color: #333; /* Dark gray color for the heading */
 }
 
+/* Container for input and task list */
 .container {
-  background: white;
-  width: 350px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: white;                               /* White background for container */
+  width: 350px;                                    /* Fixed width */
+  margin: auto;                                    /* Center horizontally */
+  padding: 20px;                                   /* Inner padding */
+  border-radius: 10px;                             /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);           /* Soft shadow for depth */
 }
 
+/* Input field for new tasks */
 input {
-  padding: 8px;
-  width: 65%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  padding: 8px;                                    /* Inner padding */
+  width: 65%;                                      /* Input width relative to container */
+  border-radius: 5px;                              /* Rounded corners */
+  border: 1px solid #ccc;                          /* Light gray border */
 }
 
+/* General button styles */
 button {
-  padding: 8px 10px;
-  margin-left: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 8px 10px;                               /* Padding inside button */
+  margin-left: 5px;                                /* Space from input */
+  border: none;                                    /* Remove default border */
+  border-radius: 5px;                              /* Rounded corners */
+  cursor: pointer;                                 /* Pointer cursor on hover */
 }
 
+/* Complete button specific style */
 .complete-btn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
 }
 
+/* Delete button specific style */
 .delete-btn {
-  background-color: #e74c3c;
-  color: white;
+  background-color: #e74c3c; /* Red background */
+  color: white;               /* White text */
 }
 
+/* List item styles */
 li {
-  list-style: none;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  list-style: none;                         /* Remove default bullets */
+  margin-top: 10px;                          /* Space between tasks */
+  display: flex;                             /* Flexbox for layout */
+  justify-content: space-between;            /* Space between task text and buttons */
+  align-items: center;                       /* Vertically center content */
 }
 
+/* Completed task style */
 .completed {
-  text-decoration: line-through;
-  color: gray;
+  text-decoration: line-through; /* Strike-through completed tasks */
+  color: gray;                    /* Gray text for completed tasks */
 }
