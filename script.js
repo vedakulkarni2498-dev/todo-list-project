@@ -1,16 +1,26 @@
 function addTask() {
-  let input = document.getElementById("taskInput");
-  let task = input.value;
+  const input = document.getElementById("taskInput");
+  const taskText = input.value.trim();
 
-  if (task === "") {
-    alert("Please enter a task");
-    return;
-  }
+  if (taskText === "") return;
 
-  let li = document.createElement("li");
-  li.textContent = task;
+  const li = document.createElement("li");
+
+  li.innerHTML = `
+    <span class="task-text">${taskText}</span>
+    <button class="complete-btn" onclick="toggleComplete(this)">✓</button>
+    <button class="delete-btn" onclick="deleteTask(this)">✗</button>
+  `;
 
   document.getElementById("taskList").appendChild(li);
-
   input.value = "";
+}
+
+function toggleComplete(btn) {
+  const text = btn.parentElement.querySelector(".task-text");
+  text.classList.toggle("completed");
+}
+
+function deleteTask(btn) {
+  btn.parentElement.remove();
 }
